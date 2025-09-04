@@ -10,6 +10,7 @@ export class PokemonController {
 
   @Post()
   create(@Body() createPokemonDto: CreatePokemonDto) {
+    console.log('Holaaaaaaaaaaaaa')
     return this.pokemonService.create(createPokemonDto);
   }
 
